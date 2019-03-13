@@ -45,13 +45,13 @@
         <g:include controller="dashboard" action="dateRecordsPanel"/>
 
         <g:include controller="dashboard" action="nslPanel"/>
-
+<%-- jtl comment
         <g:include controller="dashboard" action="spatialPanel"/>
-
+--%>
         <g:include controller="dashboard" action="statePanel"/>
 
 %{--    <g:include controller="dashboard" action="identifyLifePanel"/>--}%
-
+<%-- jtl comment
         <g:include controller="dashboard" action="mostRecordedSpeciesPanel"/>
 
         <g:include controller="dashboard" action="typeSpecimensPanel"/>
@@ -61,13 +61,13 @@
         <g:include controller="dashboard" action="bhlPanel"/>
 
         <g:include controller="dashboard" action="volunteerPortalPanel"/>
-
+--%>
         <g:include controller="dashboard" action="conservationStatusPanel"/>
 
         <g:include controller="dashboard" action="recordsByDataProviderPanel"/>
 
         <g:include controller="dashboard" action="recordsByInstitutionPanel"/>
-
+<%-- jtl comment
         <g:include controller="dashboard" action="occurrenceTreePanel"/>
 
         <g:include controller="dashboard" action="recordsByLifeFormPanel"/>
@@ -83,7 +83,7 @@
         <g:include controller="dashboard" action="downloadsByUserTypePanel"/>
 
         <g:include controller="dashboard" action="speciesImagesPanel"/>
-
+--%>
     </div>
 </div>
 

@@ -9,19 +9,21 @@
             </g:if>
             <table class="table table-condensed table-striped table-hover">
                 <tbody>
-                <g:each in="${basisOfRecord.facets[0..Math.min(4, basisOfRecord?.facets?.size() - 1)]}" var="b">
-                    <tr class="link">
-                        <td id="br-${b.facet}">${b.display}</td>
-                        <td class="numberColumn"><span class="count">${b.formattedCount}</span></td>
-                    </tr>
-                </g:each>
-                <g:if test="${basisOfRecord.facets.size() > 5}">
-                    <g:each in="${basisOfRecord.facets[5..-1]}" var="b">
-                        <tr class="moreBasis link" style="display:none;">
+                <g:if test="${basisOfRecord.facets.size()}">
+                    <g:each in="${basisOfRecord.facets[0..Math.min(4, basisOfRecord?.facets?.size() - 1)]}" var="b">
+                        <tr class="link">
                             <td id="br-${b.facet}">${b.display}</td>
                             <td class="numberColumn"><span class="count">${b.formattedCount}</span></td>
                         </tr>
                     </g:each>
+                    <g:if test="${basisOfRecord.facets.size() > 5}">
+                        <g:each in="${basisOfRecord.facets[5..-1]}" var="b">
+                            <tr class="moreBasis link" style="display:none;">
+                                <td id="br-${b.facet}">${b.display}</td>
+                                <td class="numberColumn"><span class="count">${b.formattedCount}</span></td>
+                            </tr>
+                        </g:each>
+                    </g:if>
                 </g:if>
                 </tbody>
             </table>

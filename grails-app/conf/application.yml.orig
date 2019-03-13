@@ -5,10 +5,9 @@ grails:
         defaultPackage: au.org.ala.dashboard
     config:
             locations:
-                #- file:/data/dashboard/config/dashboard-config.properties
-                #- file:/data/dashboard/config/dashboard-config.yml
-                #- file:/data/dashboard/config/dashboard-config.groovy
-                file:C:\Users\jloomis\IdeaProjects\dashboard\grails-app\data\dashboard\config\dashboard-config.properties
+                - file:/data/dashboard/config/dashboard-config.properties
+                - file:/data/dashboard/config/dashboard-config.yml
+                - file:/data/dashboard/config/dashboard-config.groovy
     spring:
         transactionManagement:
             proxies: false
@@ -22,8 +21,7 @@ grails:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
             events: false
-#default_config: "/data/dashboard/config/dashboard-config.properties"
-default_config: 'C:\Users\jloomis\IdeaProjects\dashboard\grails-app\data\dashboard\config\dashboard-config.properties'
+default_config: "/data/dashboard/config/dashboard-config.properties"
 info:
     app:
         name: '@info.app.name@'
@@ -135,37 +133,29 @@ environments:
                 appServerName: "https://auth.ala.org.au"
 
 biocache:
-  #baseURL: "https://biocache.ala.org.au"
-  baseURL: "http://vtatlasoflife.org/biocache-service"
+  baseURL: "https://biocache.ala.org.au"
 
 ala:
-  #baseURL: "https://www.ala.org.au"
-  baseURL: "http://vtatlasoflife.org/ala-hub"
+  baseURL: "https://www.ala.org.au"
 
 bie:
-  #baseURL: "https://bie.ala.org.au"
-  baseURL: "http://vtatlasoflife.org/bie-index"
+  baseURL: "https://bie.ala.org.au"
   searchPath: "/search"
 
 spatial:
-  #baseURL: "http://spatial.ala.org.au"
-   baseURL: ""
+  baseURL: "http://spatial.ala.org.au"
 
 logger:
-  #baseURL: "https://logger.ala.org.au"
-  baseURL: "http://vtatlasoflife.org/logger"
+  baseURL: "https://logger.ala.org.au"
 
 collectory:
-  #baseURL: "https://collections.ala.org.au"
-    baseURL: "http://vtatlasoflife.org/collectory"
+  baseURL: "https://collections.ala.org.au"
 
 volunteer:
-  #baseURL: "https://volunteer.ala.org.au"
-  baseURL: ""
+  baseURL: "https://volunteer.ala.org.au"
 
 images:
-  #baseURL: "https://images.ala.org.au"
-  baseURL: "http://vtatlasoflife.org/images"
+  baseURL: "https://images.ala.org.au"
 
 userDetails:
   baseURL: "https://auth.ala.org.au/userdetails"
@@ -175,15 +165,12 @@ bhl:
   statsSelector: ".onlinestats"
 
 headerAndFooter:
-  #baseURL: "https://www.ala.org.au/commonui-bs3"
-  baseURL: "http://vtatlasoflife.org"
+  baseURL: "https://www.ala.org.au/commonui-bs3"
 
 dashboard:
   data:
-    #file: "/data/dashboard/data.json"
-    file: 'C:\Users\jloomis\IdeaProjects\dashboard\grails-app\data\dashboard\data.json'
+    file: "/data/dashboard/data.json"
 
 csv:
   temp:
-    #dir: "/data/dashboard/csv/"
-    dir: 'C:\Users\jloomis\IdeaProjects\dashboard\grails-app\data\dashboard\csv\'
+    dir: "/data/dashboard/csv/"
